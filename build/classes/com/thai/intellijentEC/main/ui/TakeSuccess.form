@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 
-<Form version="1.9" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JFrameFormInfo">
   <Properties>
     <Property name="defaultCloseOperation" type="int" value="3"/>
   </Properties>
@@ -43,21 +43,30 @@
       <Layout>
         <DimensionLayout dim="0">
           <Group type="103" groupAlignment="0" attributes="0">
-              <Component id="jPanel2" max="32767" attributes="0"/>
-              <Component id="lab_2_img" max="32767" attributes="0"/>
+              <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
               <Group type="102" attributes="0">
-                  <Component id="lab_bgImg" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                  <EmptySpace max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Group type="102" attributes="0">
+                          <Group type="103" groupAlignment="0" attributes="0">
+                              <Component id="lab_info" pref="1004" max="32767" attributes="0"/>
+                              <Component id="lab_custom" alignment="0" max="32767" attributes="0"/>
+                          </Group>
+                          <EmptySpace max="-2" attributes="0"/>
+                      </Group>
+                      <Group type="102" alignment="1" attributes="0">
+                          <EmptySpace min="0" pref="0" max="32767" attributes="0"/>
+                          <Component id="lab_takein_img" min="-2" max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="400" max="-2" attributes="0"/>
+                      </Group>
+                  </Group>
               </Group>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                      <Component id="lab_2_text3" alignment="1" pref="980" max="32767" attributes="0"/>
-                      <Component id="lab_2_text2" alignment="1" max="32767" attributes="0"/>
-                      <Component id="lab_2_text1" alignment="1" max="32767" attributes="0"/>
-                      <Component id="lab_2_number" alignment="1" max="32767" attributes="0"/>
-                      <Component id="lab_2_line" alignment="1" max="32767" attributes="0"/>
-                  </Group>
+                  <Component id="btn_continue" min="-2" pref="320" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
+                  <Component id="btn_backMain" min="-2" pref="320" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="138" max="-2" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -65,21 +74,18 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jPanel2" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="71" max="-2" attributes="0"/>
+                  <Component id="lab_info" min="-2" max="-2" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_2_img" min="-2" pref="135" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_2_line" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_2_number" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_2_text1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_2_text2" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_2_text3" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace min="-2" pref="5" max="-2" attributes="0"/>
-                  <Component id="lab_bgImg" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace max="-2" attributes="0"/>
+                  <Component id="lab_custom" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace type="separate" max="-2" attributes="0"/>
+                  <Component id="lab_takein_img" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace min="-2" pref="90" max="-2" attributes="0"/>
+                  <Group type="103" groupAlignment="0" attributes="0">
+                      <Component id="btn_continue" min="-2" pref="90" max="-2" attributes="0"/>
+                      <Component id="btn_backMain" min="-2" pref="90" max="-2" attributes="0"/>
+                  </Group>
+                  <EmptySpace pref="127" max="32767" attributes="0"/>
               </Group>
           </Group>
         </DimensionLayout>
@@ -134,81 +140,49 @@
                   <Color blue="ff" green="ff" red="ff" type="rgb"/>
                 </Property>
                 <Property name="horizontalAlignment" type="int" value="0"/>
-                <Property name="text" type="java.lang.String" value="28s"/>
+                <Property name="text" type="java.lang.String" value="25s"/>
               </Properties>
             </Component>
           </SubComponents>
         </Container>
-        <Component class="javax.swing.JLabel" name="lab_bgImg">
+        <Component class="javax.swing.JLabel" name="lab_info">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/thai/intellijentEC/resources/custom.jpg"/>
+            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="32" style="0"/>
             </Property>
-            <Property name="opaque" type="boolean" value="true"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="&#x53d6;&#x4ef6;&#x6210;&#x529f;&#xff01;&#x611f;&#x8c22;&#x4f7f;&#x7528;&#x5feb;&#x9012;&#x67dc;&#x670d;&#x52a1;&#xff01;"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lab_2_img">
+        <Component class="javax.swing.JLabel" name="lab_takein_img">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
             <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/com/thai/intellijentEC/resources/phone.png"/>
+              <Image iconType="3" name="/com/thai/intellijentEC/resources/sendS_success.png"/>
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lab_2_line">
+        <Component class="javax.swing.JLabel" name="lab_custom">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="37" style="0"/>
+              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="24" style="0"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="18" green="91" red="fd" type="rgb"/>
-            </Property>
-            <Property name="horizontalAlignment" type="int" value="2"/>
-            <Property name="text" type="java.lang.String" value="&#x5ba2;&#x670d;&#x70ed;&#x7ebf;"/>
+            <Property name="horizontalAlignment" type="int" value="0"/>
+            <Property name="text" type="java.lang.String" value="&#x5982;&#x9700;&#x5e2e;&#x52a9;&#x8bf7;&#x81f4;&#x7535;010-0123 4569"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lab_2_number">
+        <Component class="javax.swing.JButton" name="btn_continue">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="37" style="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/thai/intellijentEC/resources/&#x4e2d;-&#x7ee7;&#x7eed;&#x53d6;&#x4ef6;.png"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="18" green="91" red="fd" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="010-0123 4569"/>
           </Properties>
         </Component>
-        <Component class="javax.swing.JLabel" name="lab_2_text1">
+        <Component class="javax.swing.JButton" name="btn_backMain">
           <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="19" style="0"/>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/com/thai/intellijentEC/resources/&#x4e2d;-&#x8fd4;&#x56de;&#x4e3b;&#x9875;.png"/>
             </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="99" red="99" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="&#x5ba2;&#x670d;&#x63d0;&#x793a;:"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lab_2_text2">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="19" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="99" red="99" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="1&#x3001;&#x5fd8;&#x8bb0;&#x53d6;&#x4ef6;&#x7801;&#x7684;&#x4eb2;&#xff0c;&#x8bf7;&#x51c6;&#x5907;&#x597d;&#x5feb;&#x9012;&#x5355;&#x53f7;&#x548c;&#x76f8;&#x5173;&#x8ba2;&#x5355;&#x4fe1;&#x606f;&#xff0c;&#x4ee5;&#x4fbf;&#x4e3a;&#x60a8;&#x670d;&#x52a1;&#x3002;"/>
-          </Properties>
-        </Component>
-        <Component class="javax.swing.JLabel" name="lab_2_text3">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="&#x5fae;&#x8f6f;&#x96c5;&#x9ed1;" size="19" style="0"/>
-            </Property>
-            <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-              <Color blue="99" green="99" red="99" type="rgb"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="2&#x3001;&#x5fd8;&#x8bb0;&#x9001;&#x4ef6;&#x7801;&#x7684;&#x5feb;&#x9012;&#x5927;&#x54e5;&#xff0c;&#x8bf7;&#x51c6;&#x5907;&#x597d;&#x5feb;&#x9012;&#x5355;&#x53f7;&#x548c;&#x516c;&#x53f8;&#x76f8;&#x5173;&#x4fe1;&#x606f;&#xff0c;&#x4ee5;&#x4fbf;&#x4e3a;&#x60a8;&#x91cd;&#x7f6e;&#x9001;&#x4ef6;&#x7801;&#x3002;"/>
           </Properties>
         </Component>
       </SubComponents>
