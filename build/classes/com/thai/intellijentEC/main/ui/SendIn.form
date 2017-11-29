@@ -46,14 +46,10 @@
               <Component id="jPanel2" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="0" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Component id="lab_info" max="32767" attributes="0"/>
+                  <Component id="lab_info" pref="1004" max="32767" attributes="0"/>
                   <EmptySpace max="-2" attributes="0"/>
               </Group>
-              <Group type="102" alignment="0" attributes="0">
-                  <EmptySpace min="-2" pref="401" max="-2" attributes="0"/>
-                  <Component id="lab_sendin_img" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="402" max="32767" attributes="0"/>
-              </Group>
+              <Component id="lab_sendin_img" alignment="0" max="32767" attributes="0"/>
           </Group>
         </DimensionLayout>
         <DimensionLayout dim="1">

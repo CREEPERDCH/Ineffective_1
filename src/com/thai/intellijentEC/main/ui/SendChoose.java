@@ -62,6 +62,7 @@ public class SendChoose extends javax.swing.JFrame {
         E04 = new javax.swing.JButton();
         E06 = new javax.swing.JButton();
         jPanel2 = new javax.swing.JPanel();
+        btn_screen = new javax.swing.JButton();
         B05 = new javax.swing.JButton();
         C01 = new javax.swing.JButton();
         C03 = new javax.swing.JButton();
@@ -319,15 +320,23 @@ public class SendChoose extends javax.swing.JFrame {
 
         jPanel2.setBackground(new java.awt.Color(255, 96, 10));
 
+        btn_screen.setBackground(new java.awt.Color(255, 176, 133));
+
         javax.swing.GroupLayout jPanel2Layout = new javax.swing.GroupLayout(jPanel2);
         jPanel2.setLayout(jPanel2Layout);
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 140, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(btn_screen, javax.swing.GroupLayout.DEFAULT_SIZE, 120, Short.MAX_VALUE)
+                .addContainerGap())
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 498, Short.MAX_VALUE)
+            .addGroup(jPanel2Layout.createSequentialGroup()
+                .addGap(100, 100, 100)
+                .addComponent(btn_screen, javax.swing.GroupLayout.PREFERRED_SIZE, 85, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(313, Short.MAX_VALUE))
         );
 
         B05.setBackground(new java.awt.Color(255, 160, 10));
@@ -914,6 +923,7 @@ public class SendChoose extends javax.swing.JFrame {
     private javax.swing.JButton H02;
     private javax.swing.JButton H03;
     private javax.swing.JButton btn_return;
+    private javax.swing.JButton btn_screen;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
     private javax.swing.JPanel jPanelTopBar;
