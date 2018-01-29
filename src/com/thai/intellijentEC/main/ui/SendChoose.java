@@ -111,9 +111,12 @@ public class SendChoose extends javax.swing.JFrame {
         C14 = new javax.swing.JButton();
         C15 = new javax.swing.JButton();
         C16 = new javax.swing.JButton();
-        lab_title = new javax.swing.JLabel();
         lab_canchoose = new javax.swing.JLabel();
         lab_cantchoose = new javax.swing.JLabel();
+        panel_title = new javax.swing.JPanel();
+        lab_title = new javax.swing.JLabel();
+        panel_button = new javax.swing.JLayeredPane();
+        btn_open = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -286,10 +289,6 @@ public class SendChoose extends javax.swing.JFrame {
             .addGap(0, 0, Short.MAX_VALUE)
         );
 
-        lab_title.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 64)); // NOI18N
-        lab_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lab_title.setText("请点选快递柜");
-
         lab_canchoose.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 21)); // NOI18N
         lab_canchoose.setForeground(new java.awt.Color(51, 51, 51));
         lab_canchoose.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
@@ -302,11 +301,68 @@ public class SendChoose extends javax.swing.JFrame {
         lab_cantchoose.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/thai/intellijentEC/resources/cant_choose.png"))); // NOI18N
         lab_cantchoose.setText("占用");
 
+        panel_title.setBackground(new java.awt.Color(255, 255, 255));
+
+        lab_title.setFont(new java.awt.Font("Microsoft Sans Serif", 0, 64)); // NOI18N
+        lab_title.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lab_title.setText("请点选快递柜");
+
+        btn_open.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/thai/intellijentEC/resources/中-开柜门.png"))); // NOI18N
+
+        panel_button.setLayer(btn_open, javax.swing.JLayeredPane.DEFAULT_LAYER);
+
+        javax.swing.GroupLayout panel_buttonLayout = new javax.swing.GroupLayout(panel_button);
+        panel_button.setLayout(panel_buttonLayout);
+        panel_buttonLayout.setHorizontalGroup(
+            panel_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 1268, Short.MAX_VALUE)
+            .addGroup(panel_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_buttonLayout.createSequentialGroup()
+                    .addContainerGap(493, Short.MAX_VALUE)
+                    .addComponent(btn_open, javax.swing.GroupLayout.PREFERRED_SIZE, 320, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(455, Short.MAX_VALUE)))
+        );
+        panel_buttonLayout.setVerticalGroup(
+            panel_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 222, Short.MAX_VALUE)
+            .addGroup(panel_buttonLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_buttonLayout.createSequentialGroup()
+                    .addContainerGap(96, Short.MAX_VALUE)
+                    .addComponent(btn_open, javax.swing.GroupLayout.PREFERRED_SIZE, 95, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addContainerGap(31, Short.MAX_VALUE)))
+        );
+
+        javax.swing.GroupLayout panel_titleLayout = new javax.swing.GroupLayout(panel_title);
+        panel_title.setLayout(panel_titleLayout);
+        panel_titleLayout.setHorizontalGroup(
+            panel_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 0, Short.MAX_VALUE)
+            .addGroup(panel_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(lab_title, javax.swing.GroupLayout.DEFAULT_SIZE, 1268, Short.MAX_VALUE))
+            .addGroup(panel_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_button))
+        );
+        panel_titleLayout.setVerticalGroup(
+            panel_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGap(0, 222, Short.MAX_VALUE)
+            .addGroup(panel_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, panel_titleLayout.createSequentialGroup()
+                    .addContainerGap(103, Short.MAX_VALUE)
+                    .addComponent(lab_title)
+                    .addContainerGap(46, Short.MAX_VALUE)))
+            .addGroup(panel_titleLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addComponent(panel_button))
+        );
+
         javax.swing.GroupLayout custom_panelLayout = new javax.swing.GroupLayout(custom_panel);
         custom_panel.setLayout(custom_panelLayout);
         custom_panelLayout.setHorizontalGroup(
             custom_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanelTopBar, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(custom_panelLayout.createSequentialGroup()
+                .addComponent(lab_canchoose, javax.swing.GroupLayout.PREFERRED_SIZE, 594, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lab_cantchoose, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE))
             .addGroup(custom_panelLayout.createSequentialGroup()
                 .addGap(190, 190, 190)
                 .addGroup(custom_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -417,20 +473,16 @@ public class SendChoose extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
             .addGroup(custom_panelLayout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(lab_title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(panel_title, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addContainerGap())
-            .addGroup(custom_panelLayout.createSequentialGroup()
-                .addComponent(lab_canchoose, javax.swing.GroupLayout.PREFERRED_SIZE, 594, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lab_cantchoose, javax.swing.GroupLayout.PREFERRED_SIZE, 550, javax.swing.GroupLayout.PREFERRED_SIZE))
         );
         custom_panelLayout.setVerticalGroup(
             custom_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(custom_panelLayout.createSequentialGroup()
                 .addComponent(jPanelTopBar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(125, 125, 125)
-                .addComponent(lab_title)
-                .addGap(36, 36, 36)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(panel_title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(custom_panelLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(lab_canchoose)
                     .addComponent(lab_cantchoose))
@@ -724,6 +776,7 @@ public class SendChoose extends javax.swing.JFrame {
     private javax.swing.JButton C7;
     private javax.swing.JButton C8;
     private javax.swing.JButton C9;
+    private javax.swing.JButton btn_open;
     private javax.swing.JButton btn_return;
     private javax.swing.JPanel custom_panel;
     private javax.swing.JButton img_computer;
@@ -743,5 +796,7 @@ public class SendChoose extends javax.swing.JFrame {
     private javax.swing.JLabel lab_cantchoose;
     private javax.swing.JLabel lab_time;
     private javax.swing.JLabel lab_title;
+    private javax.swing.JLayeredPane panel_button;
+    private javax.swing.JPanel panel_title;
     // End of variables declaration//GEN-END:variables
 }

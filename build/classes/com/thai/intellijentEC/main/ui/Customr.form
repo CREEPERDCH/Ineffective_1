@@ -48,14 +48,12 @@
               <Component id="lab_bgImg" alignment="0" max="32767" attributes="0"/>
               <Group type="102" alignment="1" attributes="0">
                   <EmptySpace max="32767" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
+                  <Group type="103" groupAlignment="0" max="-2" attributes="0">
                       <Component id="lab_2_line" min="-2" pref="286" max="-2" attributes="0"/>
                       <Component id="lab_2_number" min="-2" max="-2" attributes="0"/>
-                      <Group type="103" groupAlignment="0" max="-2" attributes="0">
-                          <Component id="lab_2_text1" alignment="1" max="32767" attributes="0"/>
-                          <Component id="lab_2_text3" alignment="1" pref="1004" max="32767" attributes="0"/>
-                          <Component id="lab_2_text2" alignment="1" max="32767" attributes="0"/>
-                      </Group>
+                      <Component id="lab_2_text3" pref="1090" max="32767" attributes="0"/>
+                      <Component id="lab_2_text1" alignment="1" max="32767" attributes="0"/>
+                      <Component id="lab_2_text2" alignment="1" max="32767" attributes="0"/>
                   </Group>
               </Group>
           </Group>
